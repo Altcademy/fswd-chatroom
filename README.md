@@ -7,6 +7,12 @@ Install the gems
 bundle
 ```
 
+Install tailwind css
+
+```
+rails tailwindcss:install
+```
+
 Create the database
 
 ```

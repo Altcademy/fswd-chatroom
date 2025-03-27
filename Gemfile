@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.1.2'
+ruby '3.4.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.1.6.1'
+gem 'rails', '~> 7.2'
 # Use Puma as the app server
 gem 'puma', '>= 5.6.4'
 # Use SCSS for stylesheets
@@ -39,6 +39,8 @@ gem 'webrick', '~> 1.7'
 gem 'mail', '>= 2.8.0.rc1'
 # Redis
 gem 'redis', '~> 4.8'
+# mutex_m
+gem 'mutex_m', '~> 0.3.0'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -58,7 +60,7 @@ group :development, :test do
   gem 'dotenv-rails', '~> 2.8'
   gem 'factory_bot_rails', '~> 6.2'
   gem 'pry-rails', '>= 0.3.9'
-  gem 'rspec-rails', '~> 5.1'
+  gem 'rspec-rails', '~> 7'
   gem 'rubocop', '~> 1.36'
   gem 'rubocop-rspec', '2.12'
 end
@@ -69,7 +71,6 @@ group :development do
   gem 'web-console', '>= 4.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring', '< 3.0'
-  gem 'spring-watcher-listen', '~> 2.0.1'
 
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.4'
